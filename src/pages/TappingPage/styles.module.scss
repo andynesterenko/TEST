@@ -1,0 +1,145 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: 360px;
+    margin: 0px auto;
+    padding: 20px;
+    .coinBalance {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .coin {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        p {
+            font-size: 25px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: 2px;
+        }
+    }
+    .token {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        margin: 50px 0px;
+        box-sizing: content-box;
+        padding: 50px;
+        border-radius: 100%;
+        background-image: linear-gradient(to right top, #306bc5, #2749a1, #636fd5, #5539e1, #671dc2);
+        border: 5px solid rgb(51, 14, 153);
+        box-shadow: 0px 0px 15px rgba(22, 15, 126, 0.993);
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .energyBar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        .counter {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .icon {
+                width: 35px;
+                height: 35px;
+                overflow: hidden;
+                border-radius: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            p {
+                font-size: 14px;
+                font-weight: 900;
+                color: white;
+                letter-spacing: 2px;
+            }
+        }
+        progress {
+            background-color: transparent;
+            height: 10px;
+            width: inherit;
+        }
+        progress::-webkit-progress-bar {
+            background-color: rgba(0, 0, 0, 0.087);
+            border-radius: 10px;
+            overflow: hidden;
+          }
+          progress::-webkit-progress-value {
+            background-image: linear-gradient(to bottom, #fff600, #ffe600, #ffd600, #ffc600, #ffb700);
+
+          }
+    }
+    .buttonsBar {
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.13);
+        height: 70px;
+        width: 100%;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        button {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .icon {
+                width: 35px;
+                height: 35px;
+                overflow: hidden;
+                border-radius: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            p {
+                font-size: 10px;
+                color: white;
+            }
+            &:nth-of-type(even) {
+                border-left: 1px solid rgba(0, 0, 0, 0.162);
+                border-right: 1px solid rgba(0, 0, 0, 0.162);
+            }
+        }
+    }
+    @media screen and (min-width: 360px) {
+        .token {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .token {
+            width: 450px;
+            height: 450px;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .token {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}

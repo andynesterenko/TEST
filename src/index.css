@@ -1,0 +1,12 @@
+body {
+  background-image: linear-gradient(to right top, #4e7ec7, #5577d0, #636fd5, #7764d8, #8e55d6);}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  border: none;
+}
